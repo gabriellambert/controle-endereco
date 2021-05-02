@@ -8,12 +8,19 @@ import com.example.users.entidade.repository.UsuarioRepository;
 
 public class EnderecoForm {
 	
+	@NotNull @NotEmpty
 	private String logradouro;
+	@NotNull @NotEmpty
 	private String numero;
+	@NotNull @NotEmpty
 	private String complemento;
+	@NotNull @NotEmpty
 	private String bairro;
+	@NotNull @NotEmpty
 	private String cidade;
+	@NotNull @NotEmpty
 	private String estado;
+	@NotNull @NotEmpty
 	private String cep;
 	@ManyToOne
 	private String nomeUsuario;
